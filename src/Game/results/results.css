@@ -1,0 +1,333 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin:0;
+}
+
+p{
+	font-family: "Amatic SC";
+}
+
+/********************************/
+/** 1st place winner **/
+#Players{
+	height: 75vh;
+	min-width: 300px;
+	width: 100vw;
+}
+
+#Winner{
+	width: 100%;
+	height: auto;
+	min-height: 250px;
+	display: flex;
+	text-align:center;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	/*border: 1px solid yellow;*/
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+/*#Winner p{*/
+/*	font-size: 35px;*/
+/*}*/
+
+/*.winnerFace{*/
+/*	height: 50%;*/
+/*}*/
+
+
+
+#firstSplash{
+	max-width: 40%;
+	min-width: 210px;
+	height: auto;
+	position: absolute;
+	top: 0;
+
+	margin: auto;
+	/*top: 0;*/
+	left: 0;
+	/*bottom: 0;*/
+	right: 0;
+	/*position: absolute;*/
+
+
+	/*left: 0;*/
+	/*right: 0;*/
+	/*margin-right: 50%;*/
+	/*max-width:50%;*/
+	/*min-width: 150px;*/
+	/*max-height: 100%;*/
+	/*width: auto;*/
+	/*height: auto;*/
+	/*border: 1px solid red;*/
+}
+
+#goldmedal{
+	min-width:70px;
+	max-width:100px;
+	height: auto;
+	position: absolute;
+	top: 5%;
+	margin-left: 13%;
+}
+
+#face1{
+	max-width:22%;
+	height: auto;
+	position: absolute;
+}
+
+/*#username{*/
+/*	width:200px;*/
+/*	height: 15%;*/
+/*	position: absolute;*/
+/*	bottom:0;*/
+/*	background-color: black;*/
+/*	opacity: 0.8;*/
+
+/*}*/
+
+#username{
+	color: black;
+	font-size: 30px;
+	font-weight: bold;
+	color: red;
+	background-color: rgba(192,192,192,0.2);
+	padding-bottom: 0;
+	margin-bottom: 0;
+	/*opacity: 0.4;*/
+}
+
+.playerInfo{
+	/*background-color: blue;*/
+	/*opacity: 0.1;*/
+	width: 20%;
+	position: absolute;
+	bottom:0;
+	height: 40%;
+}
+
+.playerScore{
+	background-color: rgba(0,0,255,0.2);
+	/*opacity: 0.2;*/
+}
+
+.playerScore p {
+	margin-bottom: 0;
+}
+
+
+/********************************/
+/** 2nd and 3rd place winners **/
+#Others{
+	text-align: center;
+	margin-top: 5%;
+}
+
+.row{
+	width: 100%;
+	text-align:center;
+	display:inline-block;
+	height: auto;
+}
+
+.row:after {
+	content: "";
+  	display: table;
+  	clear: both;
+}
+
+.column {
+  	float: left;
+	width: 50%;
+	min-height: 50%;
+	display: flex;
+	text-align:center;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+.column p{
+	font-size: 30px;
+}
+
+#otherPlayer{
+	width: 50%;
+	height: auto;
+}
+
+#otherface{
+	max-width:20%;
+	height: auto;
+	position: absolute;
+}
+
+#othermedals{
+	min-width:70px;
+	max-width:80px;
+	height: auto;
+	position: absolute;
+	top: 0;
+	margin-left: 20%;
+}
+
+#temp{
+	/*margin-top: 5%;*/
+	margin-bottom: -8%;
+}
+
+
+/********************************/
+/** CSs for responsiveness **/
+@media screen and (max-width:750px) {
+	#Winner{
+		width: 100%;
+		height: auto;
+		min-height: 200px;
+		/*border: 1px solid yellow;*/
+	}
+
+	#firstSplash{
+		max-width: 40%;
+		min-width: 180px;
+	}
+
+	#goldmedal{
+		min-width:60px;
+		max-width:70px;
+		top: 8%;
+		margin-left: 13%;
+	}
+
+	#face1{
+		max-width:22%;
+		height: auto;
+		position: absolute;
+	}
+
+
+	#username{
+		font-size: 25px;
+	}
+
+	.playerInfo{
+		width: 15%;
+		height: 35%;
+	}
+
+
+	/********************************/
+	/** 2nd and 3rd place winners **/
+	#Others{
+		text-align: center;
+		margin-top: 10%;
+	}
+
+	.row{
+		width: 100%;
+	}
+
+
+	.column p{
+		font-size: 25px;
+	}
+
+	#otherPlayer{
+		width: 48%;
+		height: auto;
+	}
+
+
+	#othermedals{
+		min-width:50px;
+		max-width:70px;
+	}
+}
+
+@media screen and (max-width:415px) {
+
+
+	#Winner{
+		width: 100%;
+		height: auto;
+		min-height: 150px;
+		/*border: 1px solid yellow;*/
+	}
+
+	#firstSplash{
+		max-width: 40%;
+		min-width: 150px;
+	}
+
+	#goldmedal{
+		min-width:50px;
+		max-width:60px;
+		top: 8%;
+		margin-left: 13%;
+	}
+
+	#face1{
+		max-width:22%;
+		height: auto;
+		position: absolute;
+	}
+
+
+	#username{
+		font-size: 20px;
+	}
+
+	.playerInfo{
+		width: 10%;
+		height: 30%;
+	}
+
+
+	/********************************/
+	/** 2nd and 3rd place winners **/
+	#Others{
+		text-align: center;
+		margin-top: 10%;
+	}
+
+	.row{
+		width: 100%;
+	}
+
+
+	.column {
+		width: 50%;
+		min-height: 50%;
+	}
+
+	.column p{
+		font-size: 20px;
+	}
+
+	#otherPlayer{
+		width: 45%;
+		height: auto;
+	}
+
+	#otherface{
+		max-width:20%;
+		height: auto;
+		position: absolute;
+	}
+
+	#othermedals{
+		min-width:30px;
+		max-width:50px;
+	}
+}

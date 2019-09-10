@@ -1,0 +1,379 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    min-width: 300px;
+}
+
+#home{
+    overflow: hidden;
+}
+
+.route-transition {
+    position: absolute;
+}
+
+
+.content{
+    min-width: 300px;
+    background-color: magenta;
+}
+
+.player{
+    width: 120px;
+    height: 120px;
+}
+
+.playerName{
+    color: black;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+#home #navbarContainer {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(100deg, #64b3f4 0%, #c2e59c 100%);
+    display:flex;
+    flex-flow: row;
+    min-width: 300px;
+}
+
+#home #navbarButton {
+    margin: 0 auto;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    flex: 1 6 35%;
+    order: 2;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+    min-width: 150px;
+}
+
+.container-flex {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 300px;
+}
+
+.button {
+    display: table;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 23vh;
+    width: auto;
+    min-width: 150px;
+    position: relative;
+}
+
+#home .button {
+     display: table;
+     margin: 0 auto;
+     justify-content: center;
+     align-items: center;
+     height: 23vh;
+     width: auto;
+     min-width: 150px;
+     position: absolute;
+ }
+
+.game #button {
+    margin-top: 40px;
+}
+
+
+/*taken from https://stackoverflow.com/questions/3186688/drop-shadow-for-png-image-in-css*/
+.container:hover {
+    -webkit-filter: drop-shadow(5px 5px 5px #555);
+    filter: drop-shadow(5px 5px 5px #555);
+}
+
+.textButton {
+    position:absolute;
+    margin: auto;
+    font-size: 100%;
+    font-weight: bold;
+    color: white;
+    font-family: "Amatic SC", sans-serif;
+    box-sizing: padding-box;
+}
+
+#home #navbarImage {
+    margin: 0 auto;
+    float:left;
+    justify-content: center;
+    align-items:center;
+    display:flex;
+    flex: 5 6 65%;
+    order: 1;
+}
+
+.logo {
+    min-width: 300px;
+    position:absolute;
+    margin: 0 auto;
+    width:28%;
+
+}
+
+#home .starImage {
+    display: table;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+.starImage{
+    min-height: 200px;
+}
+
+#home .textImage {
+    position:absolute;
+    font-size: 3vw;
+    font-weight: bold;
+    color: black;
+    margin: 8% 0 0 0;
+    font-family: "Amatic SC", sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .home-player{
+    max-width: 150px;
+    max-height: 150px;
+    position: absolute;
+    top:10%;
+}
+
+#home #hp1{
+    left: 60%;
+}
+
+#home  #hp2{
+    top: 70%;
+    left: 3%;
+}
+
+@media all and (max-width: 1024px) {
+    .logo{
+        min-width: 230px;
+    }
+    #home #hp1{
+        left: 53%;
+        top: 28%;
+     }
+
+    #home  #hp2{
+        top: 65%;
+        left: 5%;
+    }
+}
+
+@media all and (max-width: 850px) {
+
+    .logo{
+        min-width: 170px;
+    }
+
+}
+@media all and (max-width: 768px) {
+    .player{
+        width: 100px;
+        height: 100px;
+    }
+
+    .playerName{
+        font-size: 19px;
+    }
+
+    .logo{
+        min-width: 140px;
+    }
+
+    #home .textImage {
+        position: absolute;
+        font-size: 2vw;
+    }
+
+    #home .home-player{
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    #home #hp1{
+        left: 50%;
+        top: 33%;
+    }
+    #home #hp2{
+        left: 3%;
+        top: 60%;
+    }
+
+}
+
+
+@media all and (max-width: 575px) {
+    #home #navbarContainer{
+        flex-direction: column;
+    }
+
+    #home #navbarImage, #nabvarButton {
+        order: 0;
+
+    }
+
+    #navbarImage{
+        max-height: 40vh;
+    }
+
+    .starImage{
+        margin: none;
+        height: 100%;
+        width: auto;
+    }
+
+    .button {
+        width:40%;
+        height: auto;
+    }
+
+    .container-flex{
+        height: 60vh;
+        width: 100vw;
+        display:flex;
+        flex-wrap: wrap;
+        margin: none;
+    }
+
+    .container-flex>div {
+        flex: 0 50%;
+        box-sizing:border-box
+    }
+
+    .container {
+        max-width: 50vw;
+        margin: none;
+        padding: 0;
+        height: 30%;
+        min-width: 150px;
+    }
+
+  /*#home .button {*/
+        /*margin: none;*/
+        /*display: inline-block;*/
+        /*position: absolute;*/
+        /*width: 70%;*/
+    /*}*/
+
+    .button {
+        margin: none;
+        display: inline-block;
+        position: relative;
+        width: 70%;
+    }
+
+    .textImage{
+        font-size: 19px  !important;
+        padding-top: 5%;
+    }
+
+    .container:hover {
+        transform: scale(1.2);
+    }
+
+    .player{
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .playerName{
+        font-size: 15px;
+    }
+
+    #home .home-player{
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    #home #hp1{
+        left: 70%;
+        top: 0;
+    }
+
+    #home  #hp2{
+        top: 30%;
+        left: 2%;
+    }
+
+}
+
+@media all and (max-width: 320px) {
+    .textImage{
+        min-width: 100px;
+        top: 40%;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 15%;
+        min-width: 100px;
+    }
+
+    /*#home .button {*/
+        /*margin: none;*/
+        /*display: inline-block;*/
+        /*position: absolute;*/
+        /*width: 50%;*/
+        /*height: 30%;*/
+    /*}*/
+
+    .button {
+        margin: none;
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        height: 30%;
+    }
+
+    .container:hover {
+        transform: scale(1.2);
+    }
+
+    .player{
+        width: 40px;
+        height: 40px;
+    }
+
+    .playerName{
+        font-size: 8px;
+    }
+    #home .home-player{
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    #home #hp1{
+        left: 70%;
+        top: 0;
+    }
+
+    #home  #hp2{
+        top: 30%;
+        left: 2%;
+    }
+
+}
